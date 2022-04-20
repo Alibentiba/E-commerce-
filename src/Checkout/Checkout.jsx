@@ -43,7 +43,7 @@ const Checkout = () => {
   
     </div>
 
-    <Baner/>
+    
 </div>)
 
 

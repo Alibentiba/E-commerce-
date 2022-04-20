@@ -5,6 +5,7 @@ import Home from './Home/Home';
 import Product from './product/Product';
 import Checkout from "./Checkout/Checkout"
 import Login from './Login/Login';
+
  const App1 = () => {
   return (
  <Router>
