@@ -24,33 +24,22 @@ const [categorys,setcategorys]=useState([])
 
   return (   
 
-  
-  
      <ul className='Catgory'>
-    <li className='Catgory-title'>
+
+      <li className='Catgory-title'>
       <a href="#">Dropdown Link</a>
       <ul> 
       {categorys.map((item,index)=>{
       return (
-
          <div key={index} className='Category-elements'>
         <li   onClick={() => dispatch(selecat(item))}>{item}</li>
+        </div>)})}
 
 
 
+       </ul>
+     </li>
 
-
-
-</div>
-
-
-
-     )})}
-
-
-
-      </ul>
-    </li>
   </ul>
 
 
