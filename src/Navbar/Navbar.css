@@ -1,0 +1,108 @@
+.header{
+    background:black;
+    height: 70px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items:center ;
+}
+.header-logo {
+    width: 170px;
+    height:50px;
+    margin:0 15px 0 15px ;
+    border-radius:50%;
+    padding-left:45px;
+    padding-top: 5px;
+    /* border: solid rgb(255, 98, 0) 2px; */
+    text-decoration: none;
+    /* background: linear-gradient(126deg, rgba(9,9,121,1) 0%, rgba(255,99,0,1) 99%); */
+
+
+
+}
+
+
+
+
+ .header-logo p{
+   font-size: 24px;
+    color:#ff9a00;
+font-family:Brush Script MT, Brush Script Std, cursive;
+    
+} 
+.header-category{
+color: aliceblue;
+display: flex;
+margin-left: 10px;
+margin-right: 10px;
+font-weight: 800;
+    font-size:16px;
+
+
+}
+.search-icon{
+    color: rgb(255, 255, 255);
+    width: 35px;
+    height: auto;
+    /* border: solid blueviolet 2px; */
+    background-color: rgb(255, 98, 0);
+    border-radius: 0px 5px 5px 0px;
+    
+}
+.search-input{
+    width: 90%;
+    height: 33px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 10px;
+ }
+ .sarch{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: row;
+     width: 60%;
+     height: 100%;
+ }
+
+ .headrs-Links{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+     width: 30%;
+     height: 100%;
+ }
+ .header-link{
+     text-decoration: none;
+     color: antiquewhite;
+ }
+ .header-option{
+     display: flex;
+     flex-direction: column;
+     margin-left: 10px;
+     margin-right: 10px;
+ }
+.header-option2{
+    font-weight: 800;
+    font-size:18px;
+    color: antiquewhite;
+}
+.header-baskat-icon{
+    color: rgb(255, 255, 255);
+    width: 30px;
+    height:  30px;
+   color: rgb(255, 98, 0);
+}
+.basket-count{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header-baskat{
+    display: flex;
+    justify-content: center;
+}

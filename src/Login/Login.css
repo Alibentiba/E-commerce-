@@ -1,0 +1,79 @@
+.Login{
+width: 100%;
+height:740px;
+display: flex;
+background-color: rgb(255, 255, 255);
+align-items: center;
+justify-content:center ;
+background-color: rgb(15, 14, 26);
+
+}
+.Login-comp{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:flex-start ;
+width:500px;
+height: 650px;
+border-radius: 15px;
+background-color: rgb(14, 14, 27);
+-webkit-box-shadow: 4px 11px 32px 35px rgba(255, 72, 0, 0.16); 
+box-shadow: 4px 11px 32px 35px rgba(255, 118, 6, 0.06);
+
+
+
+}
+
+.componnet{
+width:70% ;
+height:5% ;
+margin-top: 14px;
+border-radius: 7px;
+border: none;
+color: rgb(0, 0, 0);
+font-size: 17px;
+font-weight: 600;
+outline: none;
+font:italic 1.2em "Fira Sans", serif;
+padding-left: 8px;
+
+
+
+
+}
+.Login-span{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0%;
+}
+.Login-span p{
+color: rgb(255, 255, 255);
+margin-right: 34px;
+
+
+}
+
+button{
+    font-size: 16;
+    color: rgb(255, 255, 255);
+}
+.login-logo{
+width: 390px;
+height:160px;
+margin-bottom: 20px;
+object-fit: contain;
+}
+.login-walcom{
+color:rgb(255, 255, 255);
+margin-top: 60px;
+margin-bottom:20px ;
+font: italic 1.6em "Fira Sans", serif;
+
+
+
+}
+.login-icon{
+    color: rgb(255, 115, 0);
+    width: 30px;
+    height: 30px;
+}

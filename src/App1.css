@@ -1,0 +1,7 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  background-color: rgb(235, 134, 134);
+}
