@@ -10,7 +10,7 @@ const Pro= useSelector(state=>state.counterstore.catAll)
   return (
       <div className='home-page'>
       <Navbar/>
-      <Category/>
+   
      < img className='home-image'src="https://challenge-6431c.web.app/static/media/homepage-hero.37e38a1c.jpg" alt="Home" />
      
     { 

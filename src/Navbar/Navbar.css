@@ -14,16 +14,8 @@
     border-radius:50%;
     padding-left:45px;
     padding-top: 5px;
-    /* border: solid rgb(255, 98, 0) 2px; */
     text-decoration: none;
-    /* background: linear-gradient(126deg, rgba(9,9,121,1) 0%, rgba(255,99,0,1) 99%); */
-
-
-
 }
-
-
-
 
  .header-logo p{
    font-size: 24px;
@@ -37,7 +29,7 @@ display: flex;
 margin-left: 10px;
 margin-right: 10px;
 font-weight: 800;
-    font-size:16px;
+font-size:16px;
 
 
 }
@@ -45,7 +37,6 @@ font-weight: 800;
     color: rgb(255, 255, 255);
     width: 35px;
     height: auto;
-    /* border: solid blueviolet 2px; */
     background-color: rgb(255, 98, 0);
     border-radius: 0px 5px 5px 0px;
     
@@ -92,17 +83,20 @@ font-weight: 800;
     font-size:18px;
     color: antiquewhite;
 }
+
 .header-baskat-icon{
     color: rgb(255, 255, 255);
     width: 30px;
     height:  30px;
-   color: rgb(255, 98, 0);
+    color: rgb(255, 98, 0);
+
 }
 .basket-count{
-    margin-left: 10px;
-    margin-right: 10px;
+margin-left: 10px;
+margin-right: 10px;
 }
+
 .header-baskat{
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
 }

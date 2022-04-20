@@ -2,7 +2,7 @@ import React, { useState ,useEffect} from 'react'
 import {useSelector,useDispatch} from 'react-redux'
 import "./Category.css"
 import { selecat } from "../Slic"
-// import "./Baner.css"
+import { FaAngleDown } from "react-icons/fa";
 
 const Category = () => {
 
@@ -27,12 +27,12 @@ const [categorys,setcategorys]=useState([])
      <ul className='Catgory'>
 
       <li className='Catgory-title'>
-      <a href="#">Dropdown Link</a>
+      <a href="#">Categories <FaAngleDown/></a>
       <ul> 
       {categorys.map((item,index)=>{
       return (
          <div key={index} className='Category-elements'>
-        <li   onClick={() => dispatch(selecat(item))}>{item}</li>
+        <li    onClick={() => dispatch(selecat(item))}>{item}</li>
         </div>)})}
 
 

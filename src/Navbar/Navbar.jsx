@@ -19,7 +19,7 @@ const Navbar = () => {
         <input type="text" className='search-input' placeholder='Search' />
         <AiOutlineSearch className='search-icon'/>
         </div>
-        {/* <Category/> */}
+        <Category/>
         <div className='headrs-Links'>
           <Link to="/Login" className='header-link'>
             <div className='header-option'>

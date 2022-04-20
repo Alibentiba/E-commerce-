@@ -17,8 +17,6 @@ useEffect(()=>{
     <div className='Totalbill'>
     <p>-Total price is :{total} $</p>
     <p>-Total itmes :{cartt.length}</p>
-
-    
     </div>)
 }
 export default Totalbill;

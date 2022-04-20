@@ -15,17 +15,17 @@ useEffect(()=>{
    }setarr(baner)},[])
 
 console.log(arr)
-
+const myTimeout = setTimeout(5);
   return (
 <div>
 {
-  arr.map(item=>{
-return <div className='baner' key={item.id}>
-  <img src={item.image} alt="" />
-</div>
+arr.map(item=>{
+return (<div className='baner' key={item.id}>
+<img src={item.image} alt="yjhj" />
+{myTimeout}
+</div>)
 
-
-  })
+})
 }
 </div>
     
