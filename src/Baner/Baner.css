@@ -1,0 +1,7 @@
+.baner img{
+
+width: 1300px;
+height: 300px;
+object-fit: contain;
+border: solid blueviolet 2px;
+}

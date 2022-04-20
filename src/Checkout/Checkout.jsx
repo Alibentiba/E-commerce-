@@ -40,10 +40,10 @@ const Checkout = () => {
       dispatch(RemovCart(item))}}>Remov Product</button> </div> </div>)} )} 
     </div>
    <Totalbill/>
-   <Baner/>
+  
     </div>
 
-
+    <Baner/>
 </div>)
 
 

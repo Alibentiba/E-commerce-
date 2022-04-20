@@ -2,7 +2,7 @@ import React, { useState ,useEffect} from 'react'
 import {useSelector,useDispatch} from 'react-redux'
 import "./Category.css"
 import { selecat } from "../Slic"
-import { Button } from 'antd'
+// import "./Baner.css"
 
 const Category = () => {
 
