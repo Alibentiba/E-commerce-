@@ -6,6 +6,10 @@ import "./Navbar.css"
 import Category from "../Category/Category"
 import {Link} from 'react-router-dom'
 import LogoStore from "./LogoStore.png"
+import {BiCamera} from 'react-icons/bi'
+import {AiOutlineUser} from 'react-icons/ai'
+
+
 const Navbar = () => {
   const cart = useSelector(state=> state.counterstore.cart)
   return (
@@ -16,22 +20,30 @@ const Navbar = () => {
         </Link>
        
         <div className='sarch'>
-        <input type="text" className='search-input' placeholder='Search' />
-        <AiOutlineSearch className='search-icon'/>
+        <input type="text" className='search-input' placeholder="What are you looking for..."/>
+       <BiCamera className='sarch-BiCamera'/>
+        <button className='sarch-button'> <AiOutlineSearch className='search-icon'/>Search</button>
         </div>
+
+
+
+
+
         <Category/>
+
         <div className='headrs-Links'>
           <Link to="/Login" className='header-link'>
-            <div className='header-option'>
-          
-          <span className='header-option2'>Sing in</span>
+            <div className='Singin'>
+            <AiOutlineUser className='AiOutlineUser-Singin'/>
+          <span>Sing in</span>
           </div>
           </Link>
 
     
           <Link to="/" className='header-link'>
             <div className='header-option'>
-          <span className='header-option2'>Your Prime</span>
+              
+          <span>Your Prime</span>
           
           </div>
           </Link>

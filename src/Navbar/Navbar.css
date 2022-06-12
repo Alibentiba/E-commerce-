@@ -1,11 +1,13 @@
 .header{
-    background:rgb(247, 0, 0);
+    background:rgb(255, 255, 255);
     height: 70px;
    width: 100%;
    display: flex;
    flex-direction: row;
    justify-content: flex-start;
    align-items:center ;
+   border-bottom: solid 1.5px rgb(79, 79, 79);
+   position: fixed;
 }
 .header-logo {
     width: 170px;
@@ -20,7 +22,7 @@
  .header-logo p{
    font-size: 24px;
     color:#ff9a00;
-font-family:Brush Script MT, Brush Script Std, cursive;
+   font-family:Brush Script MT, Brush Script Std, cursive;
     
 } 
 .header-category{
@@ -35,54 +37,127 @@ font-size:16px;
 }
 .search-icon{
     color: rgb(255, 255, 255);
-    width: 35px;
+    width: 12%;
     height: auto;
     background-color: rgb(255, 98, 0);
     border-radius: 0px 5px 5px 0px;
-    
+    /* border: solid 1px black; */
 }
 .search-input{
-    width: 90%;
-    height: 33px;
-    border-radius: 5px 0px 0px 5px;
-    border: none;
+    width:70%;
+    height: 98%;
+     border: none;
     outline: none;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 14px;
     padding-left: 10px;
+    border-radius: 50px 50px 50px 50px;
+
+
  }
  .sarch{
      display: flex;
      align-items: center;
-     justify-content: center;
+     justify-content: flex-start;
      flex-direction: row;
      width: 60%;
-     height: 100%;
+     height: 50%;
+     border: solid #ff9a00 1.4px;
+     border-radius: 50px 50px 50px 50px;
+
  }
+
+ .sarch-BiCamera{
+    width: 3.3%;
+    height: 100%;
+    opacity: 0.66;
+    margin-right: 5px;
+ }
+.sarch-button{
+    width: 30%;
+    height: 100.2%;
+    border-color: #ff9a00;
+    color: rgb(255, 255, 255);
+    margin: -0.1%;
+    font-weight:550;
+    border: none;
+   /* border-radius:0 50px 0 0; */
+   border-bottom-right-radius: 50px;
+   border-top-right-radius:50px ;
+   text-align: center;
+   font-size: medium;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 5%;
+}
+
+.AiOutlineUser-Singin{
+width: 40%;
+height: auto;
+}
+
+
+
+
+
+
+
+
+ 
 
  .headrs-Links{
      display: flex;
      flex-direction: row;
      align-items: center;
      justify-content: space-evenly;
-     width: 30%;
+     width: 45%;
      height: 100%;
+     /* background-color: aqua; */
  }
+ .Singin{
+    width: 100%;
+    /* border: solid blue 2px; */
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+ }
+
+.Singin span{
+    width: 60%;
+    font-size: 14px;
+    height: 100%;
+padding-top: 10%;
+/* border: solid rgb(248, 248, 248) 2px; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  .header-link{
      text-decoration: none;
-     color: antiquewhite;
+     color: rgb(47, 47, 46);
+     width: 15%;
  }
  .header-option{
      display: flex;
-     flex-direction: column;
-     margin-left: 10px;
-     margin-right: 10px;
+     flex-direction: row;
+     
  }
-.header-option2{
-    font-weight: 800;
-    font-size:18px;
-    color: rgb(255, 255, 255);
-}
+
 
 .header-baskat-icon{
     color: rgb(255, 255, 255);
