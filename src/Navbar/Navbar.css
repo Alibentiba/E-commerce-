@@ -1,50 +1,59 @@
 .header{
     background:rgb(255, 255, 255);
     height: 70px;
-   width: 100%;
+   width:99.4%;
    display: flex;
    flex-direction: row;
    justify-content: flex-start;
    align-items:center ;
    border-bottom: solid 1.5px rgb(79, 79, 79);
    position: fixed;
+   gap: 0;
 }
-.header-logo {
-    width: 170px;
-    height:50px;
-    margin:0 15px 0 15px ;
-    border-radius:50%;
-    padding-left:45px;
-    padding-top: 5px;
+.header-logo{
+    width:15%;
+    height:100%;
+    /* border-radius:50%; */
     text-decoration: none;
-}
+    /* border: solid 1px black; */
+    color: #ff4000;
+      
 
- .header-logo p{
-   font-size: 24px;
-    color:#ff9a00;
-   font-family:Brush Script MT, Brush Script Std, cursive;
-    
-} 
+}
+.header-logo span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+.header-logo  p {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 200;}
+
 .header-category{
 color: aliceblue;
 display: flex;
-margin-left: 10px;
-margin-right: 10px;
-font-weight: 800;
+height: 100%;
 font-size:16px;
-
+width: 10%;
+background-color: #ff9a00;
 
 }
 .search-icon{
     color: rgb(255, 255, 255);
-    width: 12%;
-    height: auto;
+    width: 5%;
+    height: 101%;
     background-color: rgb(255, 98, 0);
-    border-radius: 0px 5px 5px 0px;
-    /* border: solid 1px black; */
+    border-radius: -1px 0px 0px 0px;
 }
 .search-input{
-    width:70%;
+    width:80%;
     height: 98%;
      border: none;
     outline: none;
@@ -60,7 +69,7 @@ font-size:16px;
      align-items: center;
      justify-content: flex-start;
      flex-direction: row;
-     width: 60%;
+     width: 50%;
      height: 50%;
      border: solid #ff9a00 1.4px;
      border-radius: 50px 50px 50px 50px;
@@ -74,7 +83,7 @@ font-size:16px;
     margin-right: 5px;
  }
 .sarch-button{
-    width: 30%;
+    width: 15%;
     height: 100.2%;
     border-color: #ff9a00;
     color: rgb(255, 255, 255);
@@ -89,90 +98,100 @@ font-size:16px;
    display: flex;
    flex-direction: row;
    align-items: center;
-   justify-content: center;
+   justify-content: flex-start;
    gap: 5%;
+   background-color: rgb(255, 98, 0);
 }
-
-.AiOutlineUser-Singin{
-width: 40%;
-height: auto;
-}
-
-
-
-
-
-
-
-
- 
 
  .headrs-Links{
      display: flex;
      flex-direction: row;
      align-items: center;
-     justify-content: space-evenly;
-     width: 45%;
-     height: 100%;
-     /* background-color: aqua; */
+     justify-content:flex-start;
+     /* border: solid 2px black; */
+     width:25%;
+     height: 99%;
+     gap: 2%;
  }
- .Singin{
+ .header-link{
+    width: 25%;
+    height: 100%;
+    text-decoration: none;
+}
+ .header-option{
     width: 100%;
     /* border: solid blue 2px; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100%;
+   color: rgb(51, 51, 51); 
+   gap: 0;
  }
 
-.Singin span{
-    width: 60%;
+.header-option span{
+    width: 80%;
     font-size: 14px;
-    height: 100%;
+    height:auto;
 padding-top: 10%;
-/* border: solid rgb(248, 248, 248) 2px; */
+text-align: center;padding-top: 0;
+}
+.option-icon{
+    width: 27%;
+    height: auto;
+    }
 
+
+.span-cart{
+    margin-bottom:-11px;
 }
 
 
 
+@media only screen and (max-width: 400px) {
+    .headrs-Links,.header-category {
+      display: none;
+    }
+
+    .sarch{
+        width:69%;
+        margin-right: 1%;
+    }
+    .sarch-button{
+        display: none;
+    }
+    .header-logo{
+        width: 30%;
+    }
+    .search-icon {
+        color: rgb(255, 255, 255);
+        width: 12%;
+        height: 101%;
+        background-color: rgb(255, 98, 0);
+        border-radius: 0px 50px 50px 0px;
+    }
+
+
+    .header-logo span{
+width: 90%;
+font-size: 16px;
+        font-size: 20px;
+    }
+
+
+    
+    .sarch-BiCamera {
+        width: 8.3%;
+        height: 57%;
+        opacity: 0.66;
+        margin-right: -1px;
+    }
+
+
+  }
 
 
 
 
 
-
-
-
-
-
-
-
- .header-link{
-     text-decoration: none;
-     color: rgb(47, 47, 46);
-     width: 15%;
- }
- .header-option{
-     display: flex;
-     flex-direction: row;
-     
- }
-
-
-.header-baskat-icon{
-    color: rgb(255, 255, 255);
-    width: 30px;
-    height:  30px;
-    color: rgb(255, 98, 0);
-
-}
-.basket-count{
-margin-left: 10px;
-margin-right: 10px;
-text-decoration: none;
-}
-
-.header-baskat{
-display: flex;
-justify-content: center;
-}

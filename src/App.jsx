@@ -6,11 +6,16 @@ import Product from './product/Product';
 import Checkout from "./Checkout/Checkout"
 import Login from './Login/Login';
 import Navbar from './Navbar/Navbar';
- const App1 = () => {
+import Show from './Footer/Footer';
+import Footer from './Footer/Footer';
+import './App.css'
+ const App = () => {
   return (
  <Router>
-  <Navbar/>
-      <div className='app'>
+ 
+      <div className='App'>
+      <Navbar/>
+  <Footer/>
         {/* <Routes>
           <Route path ='/Checkout' element={<Checkout/>}/>
           <Route path='/Login' element={<Login/>}/>
@@ -30,7 +35,7 @@ import Navbar from './Navbar/Navbar';
   )
 }
 
-export default App1;
+export default App;
 
 
 
