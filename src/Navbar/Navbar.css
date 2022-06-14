@@ -9,6 +9,7 @@
    border-bottom: solid 1.5px rgb(79, 79, 79);
    position: fixed;
    gap: 0;
+   z-index: 11111;
 }
 .header-logo{
     width:15%;
@@ -161,6 +162,7 @@ text-align: center;padding-top: 0;
     .sarch-button{
         display: none;
     }
+
     .header-logo{
         width: 30%;
     }
@@ -176,10 +178,12 @@ text-align: center;padding-top: 0;
     .header-logo span{
 width: 90%;
 font-size: 16px;
-        font-size: 20px;
     }
 
+ .header-logo p{
+    font-size: 16px;
 
+ }
     
     .sarch-BiCamera {
         width: 8.3%;

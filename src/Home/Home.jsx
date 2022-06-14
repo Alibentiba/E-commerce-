@@ -8,15 +8,15 @@ const Home = () => {
 const Pro= useSelector(state=>state.counterstore.catAll)
   return (
       <div className='home-page'>
-      <Navbar/>
+     
       <div className='home-image'>
       < img src="https://challenge-6431c.web.app/static/media/homepage-hero.37e38a1c.jpg" alt="Home" />
       </div>
      
      <Baner/>
-
+      <div className='products-list'>
     {Pro.map((product)=>{return (<div className='product-row' key={product.id}><Product {...product} /></div>)})}  
-  
+    </div>
       
  </div>
 

@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className='footer'>
         <div className='footer-Links'>
-        <Link to="/Login" className='footer-link'>
+        <Link to="/" className='footer-link'>
             <div className='footer-option'>
             <BiHomeSmile className='footer-icon'/>
             <span>Home</span>

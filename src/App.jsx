@@ -15,13 +15,13 @@ import './App.css'
  
       <div className='App'>
       <Navbar/>
-  <Footer/>
-        {/* <Routes>
+        <Routes>
           <Route path ='/Checkout' element={<Checkout/>}/>
           <Route path='/Login' element={<Login/>}/>
           <Route path='/' element={<Home/>}/>
-        </Routes > */}
-   
+        </Routes >
+        <Footer/>
+
       </div>
        </Router> 
 

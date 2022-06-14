@@ -28,13 +28,13 @@ var settings = {
 
 
 return (
- 
+ <div className='slider-div'>
     <Slider {...settings}>
       
         {arr.map((item,index)=>{return( 
-          <div className='banner-image' key={index}><img src={item} alt='ff'/></div>
+          <div  key={index}><img className='banner-image' src={item} alt='ff'/></div>
         )})}
-         </Slider>
+         </Slider></div>
  
 );}
 export default Baner
