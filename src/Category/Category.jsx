@@ -26,9 +26,8 @@ const [categorys,setcategorys]=useState([])
 
      <ul className='Catgory'>
 
-      <li className='Catgory-title'>
-      <a href="#">Categories <FaAngleDown/></a>
-      <ul> 
+     
+   <li>Chose ur cat</li>
       {categorys.map((item,index)=>{
       return (
          <div key={index} className='Category-elements'>
@@ -37,8 +36,7 @@ const [categorys,setcategorys]=useState([])
 
 
 
-       </ul>
-     </li>
+
 
   </ul>
 

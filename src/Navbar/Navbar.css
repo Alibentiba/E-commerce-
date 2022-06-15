@@ -4,7 +4,7 @@
    width:99.4%;
    display: flex;
    flex-direction: row;
-   justify-content: flex-start;
+   justify-content:space-between;
    align-items:center ;
    border-bottom: solid 1.5px rgb(79, 79, 79);
    position: fixed;
@@ -37,15 +37,7 @@
     font-size: 18px;
     font-weight: 200;}
 
-.header-category{
-color: aliceblue;
-display: flex;
-height: 100%;
-font-size:16px;
-width: 10%;
-background-color: #ff9a00;
 
-}
 .search-icon{
     color: rgb(255, 255, 255);
     width: 5%;

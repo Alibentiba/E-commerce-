@@ -30,7 +30,7 @@ const Navbar = () => {
 
 
 <div className='header-category'>
-<Category/>
+{/* <Category/> */}
 </div>
 
         
