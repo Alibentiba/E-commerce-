@@ -27,7 +27,7 @@ const [categorys,setcategorys]=useState([])
      <ul className='Catgory'>
 
      
-   <li>Chose ur cat</li>
+   <li> Category>> </li>
       {categorys.map((item,index)=>{
       return (
          <div key={index} className='Category-elements'>

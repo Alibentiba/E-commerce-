@@ -4,11 +4,13 @@ import "./Home.css"
 import Navbar from "../Navbar/Navbar"
 import Product from '../product/Product'
 import Baner from '../Baner/Baner'
+import Category from '../Category/Category'
 const Home = () => {
 const Pro= useSelector(state=>state.counterstore.catAll)
   return (
       <div className='home-page'>
-     
+     <Navbar/>
+     <Category/>
       <div className='home-image'>
       < img src="https://challenge-6431c.web.app/static/media/homepage-hero.37e38a1c.jpg" alt="Home" />
       </div>

@@ -15,8 +15,8 @@ import Category from './Category/Category';
  <Router>
  
       <div className='App'>
-      <Navbar/>
-      <Category/>
+      {/* <Navbar/>
+      <Category/> */}
         <Routes>
           <Route path ='/Checkout' element={<Checkout/>}/>
           <Route path='/Login' element={<Login/>}/>
