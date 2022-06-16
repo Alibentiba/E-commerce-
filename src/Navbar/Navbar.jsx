@@ -1,17 +1,74 @@
-import React from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {FaDolly} from 'react-icons/fa'
-import {useSelector } from 'react-redux'
 import "./Navbar.css"
-import Category from "../Category/Category"
 import {Link} from 'react-router-dom'
-// import LogoStore from "./LogoStore.png"
 import {BiCamera,BiMessageSquareDots} from 'react-icons/bi'
 import {AiOutlineUser} from 'react-icons/ai'
 import {BsCart4} from 'react-icons/bs'
-
+import React, {useEffect} from 'react'
+import {signInWithPopup } from "firebase/auth";
+import { auth, provider } from "../firebaseConfig";
+import { getAuth} from "firebase/auth";
+import { useNavigate  } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import {setUserLoginDetails,setSignOutState} from '../Slic'
+import {BiHomeSmile} from 'react-icons/bi'
 
 const Navbar = () => {
+
+  const dispatch = useDispatch();
+  const history = useNavigate();
+    const userName = useSelector(state=>state.counterstore.userinfo.name);
+  const userPhoto = useSelector(state=>state.counterstore.userinfo.photo );
+  useEffect(() => {
+    auth.onAuthStateChanged(async (user) => {
+      if (user) {
+        setUser(user);
+        history("/");
+      }
+    });
+  }, [userName]);
+  
+  const handleAuth = () => {
+    if (!userName) {
+          const auth = getAuth();
+          signInWithPopup(auth, provider)
+            .then((result) => {
+          
+              setUser(result.user);
+  
+  
+  
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
+    } else if (userName) {
+      auth
+        .signOut()
+        .then(() => {
+          dispatch(setSignOutState());
+          history("/");
+                })
+        .catch((err) => alert(err.message));
+    }
+  };
+  
+  const setUser = (user) => {
+    dispatch(
+      setUserLoginDetails({
+        name: user.displayName,
+        email: user.email,
+        photo: user.photoURL,
+      })
+    );
+  };
+
+
+
+
+
+
   const cart = useSelector(state=> state.counterstore.cart)
   return (
     <div className='header'>
@@ -27,24 +84,20 @@ const Navbar = () => {
         <button className='sarch-button'>Search</button>
         </div>
 
-
-
-<div className='header-category'>
-{/* <Category/> */}
-</div>
-
-        
-
         <div className='headrs-Links'>
-
-          <Link to="/Login" className='header-link'>
+          
+        <Link to="/" className='header-link home'>
             <div className='header-option'>
-            <AiOutlineUser className='option-icon'/>
-            <span>Sing in</span>
+            <BiHomeSmile className='header-icon'/>
+            <span>Home</span>
           </div>
           </Link>
 
-    
+
+
+
+
+
           <Link to="/" className='header-link'>
             <div className='header-option'> 
             <BiMessageSquareDots className='option-icon'/>    
@@ -57,14 +110,25 @@ const Navbar = () => {
             <span>Orders</span>
           </div>
           </Link>
-
-          <Link to="/Checkout" className='header-link' >
+      
+          <Link to="/Checkout" className='header-link bas' >
             <div className='header-option'>
             <span className='span-cart'>{cart.length}</span>
             <BsCart4 className='option-icon'/>
             
             </div>
           </Link>
+          <Link to="/"  className='header-link'>
+
+          {!userName ? (
+            <div className='header-option' onClick={handleAuth} >
+            <AiOutlineUser className='option-icon' />
+            <span>Sing in</span>
+            </div>
+            ):
+              (<div  className='header-option'>
+                <img className='option-icon userphoto'  onClick={handleAuth} src={userPhoto} alt="dtgf"   /></div>)}
+              </Link>
 
          </div>
 

@@ -5,6 +5,7 @@ import Navbar from "../Navbar/Navbar"
 import Product from '../product/Product'
 import Baner from '../Baner/Baner'
 import Category from '../Category/Category'
+import Footer from '../Footer/Footer'
 const Home = () => {
 const Pro= useSelector(state=>state.counterstore.catAll)
   return (
@@ -19,7 +20,7 @@ const Pro= useSelector(state=>state.counterstore.catAll)
       <div className='products-list'>
     {Pro.map((product)=>{return (<div className='product-row' key={product.id}><Product {...product} /></div>)})}  
     </div>
-      
+    {/* <Footer/> */}
  </div>
 
 

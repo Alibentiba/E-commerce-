@@ -22,7 +22,7 @@ import Category from './Category/Category';
           <Route path='/Login' element={<Login/>}/>
           <Route path='/' element={<Home/>}/>
         </Routes >
-        <Footer/>
+        
 
       </div>
        </Router> 

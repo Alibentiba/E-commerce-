@@ -1,7 +1,7 @@
 .header{
     background:rgb(255, 255, 255);
     height: 70px;
-   width:99.4%;
+   width:100%;
    display: flex;
    flex-direction: row;
    justify-content:space-between;
@@ -134,19 +134,53 @@ text-align: center;padding-top: 0;
     width: 27%;
     height: auto;
     }
-
+    .userphoto{
+        width: 45%;
+        height: 55%;
+        border-radius: 50%;
+        object-fit: contain;
+    }
 
 .span-cart{
     margin-bottom:-11px;
 }
 
-
+.home{display: none;}
 
 @media only screen and (max-width: 400px) {
-    .headrs-Links,.header-category {
+  .header-category {
       display: none;
     }
-
+    .home{display: flex;}
+    .bas{   
+        display: flex;
+       z-index: 1123;
+       position: absolute;
+       margin-top: -170%;
+       margin-left:3%;
+       border-radius: 50%;
+       border:none;
+       width: 20%;
+       height: 48%;
+       opacity: 0.9;
+    background-color: rgb(251, 213, 213);}
+    .headrs-Links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        /* border: solid 2px black; */
+        width: 100%;
+        height: 10%;
+        grid-gap: 2%;
+        gap: 2%;
+        position: fixed;
+        /* bottom: -246%; */
+        z-index: 234;
+        bottom: 0%;
+        border: solid orange 2px;
+        background: #ff9a00;
+    }
     .sarch{
         width:69%;
         margin-right: 1%;
@@ -183,7 +217,11 @@ font-size: 16px;
         opacity: 0.66;
         margin-right: -1px;
     }
-
+    /* .userphoto {
+        width: 100%;
+        height: 58%;
+        border-radius: 50%;
+    } */
 
   }
 
