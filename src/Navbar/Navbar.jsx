@@ -24,7 +24,7 @@ const Navbar = () => {
     auth.onAuthStateChanged(async (user) => {
       if (user) {
         setUser(user);
-        history("/");
+        history("");
       }
     });
   }, [userName]);
@@ -36,9 +36,6 @@ const Navbar = () => {
             .then((result) => {
           
               setUser(result.user);
-  
-  
-  
         })
         .catch((error) => {
           alert(error.message);
@@ -48,7 +45,7 @@ const Navbar = () => {
         .signOut()
         .then(() => {
           dispatch(setSignOutState());
-          history("/");
+          history("");
                 })
         .catch((err) => alert(err.message));
     }
@@ -111,23 +108,23 @@ const Navbar = () => {
           </div>
           </Link>
       
-          <Link to="/Checkout" className='header-link bas' >
+          <Link to="/Checkout" className='header-link bas'>
             <div className='header-option'>
             <span className='span-cart'>{cart.length}</span>
-            <BsCart4 className='option-icon'/>
-            
+            <BsCart4 className='option-icon Cart'/>
             </div>
           </Link>
+
           <Link to="/"  className='header-link'>
 
           {!userName ? (
             <div className='header-option' onClick={handleAuth} >
-            <AiOutlineUser className='option-icon' />
+            <AiOutlineUser className='option-icon'/>
             <span>Sing in</span>
             </div>
             ):
               (<div  className='header-option'>
-                <img className='option-icon userphoto'  onClick={handleAuth} src={userPhoto} alt="dtgf"   /></div>)}
+                <img className='option-icon userphoto'  onClick={handleAuth} src={userPhoto} alt="user"   /></div>)}
               </Link>
 
          </div>

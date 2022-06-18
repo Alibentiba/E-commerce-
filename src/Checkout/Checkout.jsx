@@ -4,7 +4,6 @@ import Navbar from '../Navbar/Navbar'
 import {useSelector ,useDispatch} from 'react-redux'
 import { FaStar } from "react-icons/fa"
 import { RemovCart } from "../Slic"
-import Baner from '../Baner/Baner'
 
 import Totalbill from '../Totalbill/Totalbill'
 
@@ -18,6 +17,7 @@ const Checkout = () => {
     <Navbar/>
   
     <div className='checkout-hader'>
+      
     <div className='checkout-after-hader'>
       
     <img alt='checl' className='checkout-after-hader-img' src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"/>

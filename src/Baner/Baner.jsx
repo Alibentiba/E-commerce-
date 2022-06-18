@@ -14,7 +14,7 @@ useEffect(()=>{
     baner=baner.concat(allPro[i].image)
    
    }setarr(baner)},[])
-console.log(arr)
+
 
 var settings = {
   dots: true,

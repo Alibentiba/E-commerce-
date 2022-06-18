@@ -1,12 +1,9 @@
 import React from 'react'
 import "./product.css"
-// import {logo} from "./../logo.jpg"
 import { addCart } from "../Slic"
 import { FaStar } from "react-icons/fa"
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 const Product = ({ id, title, price, description, category, image,rating}) => {
-
-console.log(rating) 
  const dispatch = useDispatch()
  
   const item={id,title,price,description,category,image,rating}
