@@ -24,7 +24,7 @@ const Navbar = () => {
     auth.onAuthStateChanged(async (user) => {
       if (user) {
         setUser(user);
-        history("");
+        
       }
     });
   }, [userName]);
@@ -36,6 +36,7 @@ const Navbar = () => {
             .then((result) => {
           
               setUser(result.user);
+              history("/");
         })
         .catch((error) => {
           alert(error.message);
@@ -45,7 +46,7 @@ const Navbar = () => {
         .signOut()
         .then(() => {
           dispatch(setSignOutState());
-          history("");
+          history("/");
                 })
         .catch((err) => alert(err.message));
     }
